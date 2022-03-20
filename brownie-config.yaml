@@ -1,0 +1,15 @@
+dependencies:
+  - ChainLink/chainlink-contracts@0.5.0
+  - OpenZeppelin/openzeppelin-contracts@4.5.0
+compiler:
+dotenv: .env
+networks:
+  default: development
+  development:
+    fee: 100000000000000000
+  rinkeby:
+    fee: 100000000000000000
+  mainnet-fork:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}
